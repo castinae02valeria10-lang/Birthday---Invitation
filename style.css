@@ -106,5 +106,11 @@ body{
 .heart{ position:absolute; bottom:-10%; font-size:22px; color:var(--heart); animation: floatUp linear forwards; }
 @keyframes floatUp{
   to{ transform: translateY(-115vh) translateX(var(--dx,0px)) rotate(var(--rot,0deg)); opacity:0; }
+
 }
 .final-emoji{ font-size:42px; margin-bottom:6px; }
+
+.detail-row a.value{
+  text-decoration: underline;
+  color: var(--plum);
+}
