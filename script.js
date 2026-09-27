@@ -48,3 +48,12 @@ function bursHearts(count){
     btn.addEventListener('touchstart', e => { e.preventDefault(); dodge(); }, {passive:false});
     btn.addEventListener('click', e => e.preventDefault());
 })();
+
+//Nombre dinámico desde la URL (?nombre=Argeli)
+(function(){
+    const params = new URLSearchParams(window.location.search);
+    const nombre = params.get('nombre');
+    if(nombre){
+        document.querySelectorAll('.guest-name').forEach(el => el.textContent = nombre);
+    }
+})();
