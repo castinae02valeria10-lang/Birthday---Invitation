@@ -24,7 +24,7 @@
     <!--Saludo-->
     <div class="stage" id="stage-1">
         <div class="card">
-            <h1 class="headline"> Holii, Chiqui 💌</h1>
+            <h1 class="headline">Holii, <span class="guest-name">Chiqui</span> 💌</h1>
             <p class="body-text">
                 El 2 de octubre cumploañito. 
                 Quisiera que estes presente, te tengo mucho aprecio y cariño sera algo pequeño pero con amor,
@@ -62,11 +62,18 @@
         <div class="card">
             <h1 class="headline"> Valeria Castillo te invita: </h1>
             <div class="details-list">
-                <div class="detail-row"><div class="icon">📍</div><div class="txt"><span class="label">Lugar</span><span class="value">Oscar Moser</span></div></div>
+               <div class="detail-row">
+  <div class="icon">📍</div>
+  <div class="txt">
+    <span class="label">Lugar</span>
+    <a class="value" href="https://maps.app.goo.gl/AnsZ4yba3UNYiz9P6" target="_blank" rel="noopener">Oscar Moser 338</a>
+  </div>
+</div>
                 <div class="detail-row"><div class="icon">🕒</div><div class="txt"><span class="label">Hora</span><span class="value">18:00 PM</span></div></div>
                 <div class="detail-row"><div class="icon">📅</div><div class="txt"><span class="label">Fecha</span><span class="value">2 de octubre</span></div></div>
             </div>
             <button class="btn" onclick="goTo('stage-4')">Seguir</button>
+            <button class="btn ghost" onclick="goTo('stage-2')">← Volver</button>
         </div>
     </div>
 
@@ -100,12 +107,13 @@
     <div class="stage" id="stage-final">
         <div class="card">
             <div class="final-emoji">🥳</div>
-            <h1 class="headline">¡Listo, CHIQUI!</h1>
+            <h1 class="headline">¡Listo, <span class="guest-name">CHIQUI</span>!</h1>
             <p class="body-text">
                 Nos vemoss el 2 de octubre en mi house.
                 Mi pincki pincki, loquita, arge, princesss. TQM.  
             </p>
             <p class="signature">Con cariño, Vale</p>
+            <button class="btn ghost" onclick="goTo('stage-1')" style="margin-top:14px;">← Volver a leer la invitación</button>
         </div>
     </div>
 
